@@ -1,0 +1,6 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+/* আপনার অন্যান্য কাস্টম স্টাইল এর নিচে থাকবে */
