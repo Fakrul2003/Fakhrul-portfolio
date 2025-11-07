@@ -13,7 +13,7 @@ const App = () => {
         <div className="flex flex-col items-center mb-8">
           <img
             // Note: Update this src path to an accessible URL or a base64 image if 'assets/images/siam.jpg' is not publicly available 
-            src=".../../public/Fakhrul.jpg"
+            src=".../../public/image/Fakhrul-H.jpg"
             alt="MD. FAKRUL HASSAN"
             className="w-36 h-36 rounded-full object-cover border-4 border-white mb-4 shadow-lg"
             onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x150/0f4c75/ffffff?text=Fakrul" }}
