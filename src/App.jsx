@@ -13,7 +13,7 @@ const App = () => {
         <div className="flex flex-col items-center mb-8">
           <img
             // Note: Update this src path to an accessible URL or a base64 image if 'assets/images/siam.jpg' is not publicly available 
-            src="../../public/Fakhrul.jpg"
+            src=".../../public/Fakhrul.jpg"
             alt="MD. FAKRUL HASSAN"
             className="w-36 h-36 rounded-full object-cover border-4 border-white mb-4 shadow-lg"
             onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x150/0f4c75/ffffff?text=Fakrul" }}
@@ -102,7 +102,7 @@ const App = () => {
             <a href="https://www.linkedin.com/in/fakrul-islam-bb4043229/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
               <Linkedin className="w-7 h-7" />
             </a>
-            <a href="https://siyamar.github.io/Abr-Portfolio/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
+            <a href="https://fakrul2003.github.io/Fakhrul-portfolio/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
               <Globe className="w-7 h-7" />
             </a>
           </div>
