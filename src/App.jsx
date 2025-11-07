@@ -1,10 +1,17 @@
 import React from 'react';
-// Contact and Utility Icons from Font Awesome (fa)
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload, FaCheckCircle } from 'react-icons/fa';
 // Social Icons from Lucide React
 import { Github, Linkedin, Globe } from 'lucide-react'; 
 
 const App = () => {
+  // FINAL FIX: base URL ব্যবহার করে অ্যাসেট পাথ তৈরি করা হলো। 
+  // এটি নিশ্চিত করে যে GitHub Pages-এ '/Fakhrul-portfolio/' পাথটি স্বয়ংক্রিয়ভাবে ছবির নামের আগে যোগ হবে।
+  // ছবির আসল পাথ: public/image/Fakhrul-H.jpg
+  const imagePath = `${import.meta.env.BASE_URL}image/Fakhrul-H.jpg`;
+  
+  // CV এর আসল পাথ: public/Fakhrul.pdf
+  const cvPath = `${import.meta.env.BASE_URL}Fakhrul.pdf`; 
+
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-50 font-sans">
       {/* Sidebar */}
@@ -12,10 +19,10 @@ const App = () => {
         {/* Profile */}
         <div className="flex flex-col items-center mb-8">
           <img
-            // Note: Update this src path to an accessible URL or a base64 image if 'assets/images/siam.jpg' is not publicly available 
-            src=".../../public/image/Fakhrul-H.jpg"
+            src={imagePath} // ফিক্সড পাথ
             alt="MD. FAKRUL HASSAN"
             className="w-36 h-36 rounded-full object-cover border-4 border-white mb-4 shadow-lg"
+            // onError: যদি ছবি লোড না হয়, একটি প্লেসহোল্ডার দেখাবে।
             onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x150/0f4c75/ffffff?text=Fakrul" }}
           />
           <h1 className="text-3xl font-extrabold tracking-wide">MD. FAKRUL HASSAN</h1>
@@ -40,7 +47,7 @@ const App = () => {
 
         {/* Download CV Button */}
         <button
-          onClick={() => window.open('Fakhrul.pdf', '_blank')}
+          onClick={() => window.open(cvPath, '_blank')}
           className="w-full bg-white text-[#1E5F74] py- px-4 rounded-lg font-bold shadow-md hover:bg-gray-200 transition-all duration-300 flex items-center justify-center text-lg transform hover:scale-[1.01]"
         >
           <FaDownload className="mr-3" /> Download CV
@@ -49,7 +56,7 @@ const App = () => {
         {/* Skills */}
         <div className="pl-4">
           <h3 className="text-2xl font-bold mb-2 border-b-2 border-white/50 pb-2">Skills</h3>
-          {/* FIX: grid-cols-1 md:grid-cols-2 যোগ করা হলো যাতে Professional Skills ডানদিকে দেখা যায় */}
+          {/* FIX: grid-cols-1 md:grid-cols-2 যোগ করা হলো যাতে Professional Skills ডানদিকে দেখা যায় */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7"> 
             {/* Technical Skills */}
             <div>
