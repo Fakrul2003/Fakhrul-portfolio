@@ -1,17 +1,8 @@
-// tailwind.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // এই লাইনটি যোগ করুন
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    tailwindcss()
-  ],
-   base: '/Fakhrul-portfolio/'
-}
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  base: './', // সাদা স্ক্রিন সমস্যা সমাধানের জন্য এটি জরুরি
+})
