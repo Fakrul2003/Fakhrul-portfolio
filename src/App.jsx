@@ -7,7 +7,7 @@ const App = () => {
   // FINAL FIX: base URL ব্যবহার করে অ্যাসেট পাথ তৈরি করা হলো। 
   // এটি নিশ্চিত করে যে GitHub Pages-এ '/Fakhrul-portfolio/' পাথটি স্বয়ংক্রিয়ভাবে ছবির নামের আগে যোগ হবে।
   // ছবির আসল পাথ: public/image/Fakhrul-H.jpg
-  const imagePath = `${import.meta.env.BASE_URL}image/Fakhrul-H.jpg`;
+  const imagePath = `${import.meta.env.BASE_URL}image/Fakhrul-Islam.jpg`;
   
   // CV এর আসল পাথ: public/Fakhrul.pdf
   const cvPath = `${import.meta.env.BASE_URL}Fakhrul.pdf`; 
