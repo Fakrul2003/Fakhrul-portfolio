@@ -109,7 +109,7 @@ const App = () => {
             <a href="https://www.linkedin.com/in/fakrul-islam-bb4043229/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
               <Linkedin className="w-7 h-7" />
             </a>
-            <a href="https://fakrul2003.github.io/Fakhrul-portfolio/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
+            <a href="https://fakhrul-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
               <Globe className="w-7 h-7" />
             </a>
             <a href="https://www.facebook.com/fakrul.islam.822786" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
