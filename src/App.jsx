@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload, FaCheckCircle } from 'react-icons/fa';
 // Social Icons from Lucide React
-import { Github, Linkedin, Globe } from 'lucide-react'; 
+import { Github, Linkedin, Globe, Facebook } from 'lucide-react'; 
 
 const App = () => {
   // FINAL FIX: base URL ব্যবহার করে অ্যাসেট পাথ তৈরি করা হলো। 
@@ -111,6 +111,9 @@ const App = () => {
             </a>
             <a href="https://fakrul2003.github.io/Fakhrul-portfolio/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
               <Globe className="w-7 h-7" />
+            </a>
+            <a href="https://www.facebook.com/fakrul.islam.822786" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition transform hover:scale-110">
+              <Facebook className="w-7 h-7" />
             </a>
           </div>
         </div>
