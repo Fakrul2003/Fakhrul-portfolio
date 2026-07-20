@@ -10,7 +10,7 @@ const App = () => {
   const imagePath = `${import.meta.env.BASE_URL}image/Fakhrul-Islam.jpg`;
   
   // CV এর আসল পাথ: public/Fakhrul.pdf
-  const cvPath = `${import.meta.env.BASE_URL}Fakhrul.pdf`; 
+  const cvPath = `${import.meta.env.BASE_URL}I-will-do-full-stack-website-development-using-PHP-Laravel-Node.js-JavaScript-and-MYSQL-I-will-build-web-applications-as-full-stack-react-next-js-and-node-js-developer.pdf`; 
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-50 font-sans">
